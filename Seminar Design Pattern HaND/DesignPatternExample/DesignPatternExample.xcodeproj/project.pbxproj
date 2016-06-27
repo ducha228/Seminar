@@ -1,0 +1,381 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0AFD502D1D21153C0043624C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD502C1D21153C0043624C /* main.m */; };
+		0AFD50301D21153C0043624C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD502F1D21153C0043624C /* AppDelegate.m */; };
+		0AFD50331D21153C0043624C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD50321D21153C0043624C /* ViewController.m */; };
+		0AFD50361D21153C0043624C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFD50341D21153C0043624C /* Main.storyboard */; };
+		0AFD50381D21153D0043624C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0AFD50371D21153D0043624C /* Assets.xcassets */; };
+		0AFD503B1D21153D0043624C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0AFD50391D21153D0043624C /* LaunchScreen.storyboard */; };
+		0AFD50441D2116260043624C /* NetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD50431D2116260043624C /* NetworkManager.m */; };
+		0AFD50471D2116380043624C /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD50461D2116380043624C /* DataManager.m */; };
+		0AFD504A1D21164E0043624C /* SettingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD50491D21164E0043624C /* SettingManager.m */; };
+		0AFD504D1D2116690043624C /* PrinterFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD504C1D2116690043624C /* PrinterFactory.m */; };
+		0AFD50501D2116790043624C /* EpsonPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD504F1D2116790043624C /* EpsonPrinter.m */; };
+		0AFD50531D2116880043624C /* StarPrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD50521D2116880043624C /* StarPrinter.m */; };
+		0AFD50561D2116990043624C /* ConsolePrinter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD50551D2116990043624C /* ConsolePrinter.m */; };
+		0AFD505B1D2117950043624C /* ShopManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD505A1D2117950043624C /* ShopManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0AFD50281D21153B0043624C /* DesignPatternExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignPatternExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AFD502C1D21153C0043624C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0AFD502E1D21153C0043624C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0AFD502F1D21153C0043624C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0AFD50311D21153C0043624C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0AFD50321D21153C0043624C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0AFD50351D21153C0043624C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0AFD50371D21153D0043624C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0AFD503A1D21153D0043624C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0AFD503C1D21153D0043624C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0AFD50421D2116260043624C /* NetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NetworkManager.h; path = Facade/NetworkManager.h; sourceTree = "<group>"; };
+		0AFD50431D2116260043624C /* NetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NetworkManager.m; path = Facade/NetworkManager.m; sourceTree = "<group>"; };
+		0AFD50451D2116380043624C /* DataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DataManager.h; path = Facade/DataManager.h; sourceTree = "<group>"; };
+		0AFD50461D2116380043624C /* DataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DataManager.m; path = Facade/DataManager.m; sourceTree = "<group>"; };
+		0AFD50481D21164E0043624C /* SettingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingManager.h; path = Singleton/SettingManager.h; sourceTree = "<group>"; };
+		0AFD50491D21164E0043624C /* SettingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingManager.m; path = Singleton/SettingManager.m; sourceTree = "<group>"; };
+		0AFD504B1D2116690043624C /* PrinterFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrinterFactory.h; path = AbstractFactory/PrinterFactory.h; sourceTree = "<group>"; };
+		0AFD504C1D2116690043624C /* PrinterFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PrinterFactory.m; path = AbstractFactory/PrinterFactory.m; sourceTree = "<group>"; };
+		0AFD504E1D2116790043624C /* EpsonPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EpsonPrinter.h; path = AbstractFactory/EpsonPrinter.h; sourceTree = "<group>"; };
+		0AFD504F1D2116790043624C /* EpsonPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EpsonPrinter.m; path = AbstractFactory/EpsonPrinter.m; sourceTree = "<group>"; };
+		0AFD50511D2116880043624C /* StarPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "\U0010StarPrinter.h"; path = "AbstractFactory/\U0010StarPrinter.h"; sourceTree = "<group>"; };
+		0AFD50521D2116880043624C /* StarPrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "\U0010StarPrinter.m"; path = "AbstractFactory/\U0010StarPrinter.m"; sourceTree = "<group>"; };
+		0AFD50541D2116990043624C /* ConsolePrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConsolePrinter.h; path = AbstractFactory/ConsolePrinter.h; sourceTree = "<group>"; };
+		0AFD50551D2116990043624C /* ConsolePrinter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConsolePrinter.m; path = AbstractFactory/ConsolePrinter.m; sourceTree = "<group>"; };
+		0AFD50591D2117950043624C /* ShopManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ShopManager.h; path = Facade/ShopManager.h; sourceTree = "<group>"; };
+		0AFD505A1D2117950043624C /* ShopManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ShopManager.m; path = Facade/ShopManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0AFD50251D21153B0043624C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0AFD501F1D21153B0043624C = {
+			isa = PBXGroup;
+			children = (
+				0AFD502A1D21153C0043624C /* DesignPatternExample */,
+				0AFD50291D21153B0043624C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0AFD50291D21153B0043624C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0AFD50281D21153B0043624C /* DesignPatternExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0AFD502A1D21153C0043624C /* DesignPatternExample */ = {
+			isa = PBXGroup;
+			children = (
+				0AFD502E1D21153C0043624C /* AppDelegate.h */,
+				0AFD502F1D21153C0043624C /* AppDelegate.m */,
+				0AFD50311D21153C0043624C /* ViewController.h */,
+				0AFD50321D21153C0043624C /* ViewController.m */,
+				0AFD50341D21153C0043624C /* Main.storyboard */,
+				0AFD50371D21153D0043624C /* Assets.xcassets */,
+				0AFD50391D21153D0043624C /* LaunchScreen.storyboard */,
+				0AFD503C1D21153D0043624C /* Info.plist */,
+				0AFD502B1D21153C0043624C /* Supporting Files */,
+				0AFD505C1D21179B0043624C /* Facade */,
+				0AFD50581D2117100043624C /* Singleton */,
+				0AFD50571D2117050043624C /* AbstractFactory */,
+			);
+			path = DesignPatternExample;
+			sourceTree = "<group>";
+		};
+		0AFD502B1D21153C0043624C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0AFD502C1D21153C0043624C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0AFD50571D2117050043624C /* AbstractFactory */ = {
+			isa = PBXGroup;
+			children = (
+				0AFD504B1D2116690043624C /* PrinterFactory.h */,
+				0AFD504C1D2116690043624C /* PrinterFactory.m */,
+				0AFD504E1D2116790043624C /* EpsonPrinter.h */,
+				0AFD504F1D2116790043624C /* EpsonPrinter.m */,
+				0AFD50511D2116880043624C /* StarPrinter.h */,
+				0AFD50521D2116880043624C /* StarPrinter.m */,
+				0AFD50541D2116990043624C /* ConsolePrinter.h */,
+				0AFD50551D2116990043624C /* ConsolePrinter.m */,
+			);
+			name = AbstractFactory;
+			sourceTree = "<group>";
+		};
+		0AFD50581D2117100043624C /* Singleton */ = {
+			isa = PBXGroup;
+			children = (
+				0AFD50481D21164E0043624C /* SettingManager.h */,
+				0AFD50491D21164E0043624C /* SettingManager.m */,
+			);
+			name = Singleton;
+			sourceTree = "<group>";
+		};
+		0AFD505C1D21179B0043624C /* Facade */ = {
+			isa = PBXGroup;
+			children = (
+				0AFD50421D2116260043624C /* NetworkManager.h */,
+				0AFD50431D2116260043624C /* NetworkManager.m */,
+				0AFD50451D2116380043624C /* DataManager.h */,
+				0AFD50461D2116380043624C /* DataManager.m */,
+				0AFD50591D2117950043624C /* ShopManager.h */,
+				0AFD505A1D2117950043624C /* ShopManager.m */,
+			);
+			name = Facade;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0AFD50271D21153B0043624C /* DesignPatternExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0AFD503F1D21153D0043624C /* Build configuration list for PBXNativeTarget "DesignPatternExample" */;
+			buildPhases = (
+				0AFD50241D21153B0043624C /* Sources */,
+				0AFD50251D21153B0043624C /* Frameworks */,
+				0AFD50261D21153B0043624C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesignPatternExample;
+			productName = DesignPatternExample;
+			productReference = 0AFD50281D21153B0043624C /* DesignPatternExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AFD50201D21153B0043624C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = DucHa;
+				TargetAttributes = {
+					0AFD50271D21153B0043624C = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 0AFD50231D21153B0043624C /* Build configuration list for PBXProject "DesignPatternExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0AFD501F1D21153B0043624C;
+			productRefGroup = 0AFD50291D21153B0043624C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0AFD50271D21153B0043624C /* DesignPatternExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0AFD50261D21153B0043624C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AFD503B1D21153D0043624C /* LaunchScreen.storyboard in Resources */,
+				0AFD50381D21153D0043624C /* Assets.xcassets in Resources */,
+				0AFD50361D21153C0043624C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0AFD50241D21153B0043624C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0AFD50441D2116260043624C /* NetworkManager.m in Sources */,
+				0AFD50471D2116380043624C /* DataManager.m in Sources */,
+				0AFD50531D2116880043624C /* StarPrinter.m in Sources */,
+				0AFD50501D2116790043624C /* EpsonPrinter.m in Sources */,
+				0AFD50561D2116990043624C /* ConsolePrinter.m in Sources */,
+				0AFD50331D21153C0043624C /* ViewController.m in Sources */,
+				0AFD504D1D2116690043624C /* PrinterFactory.m in Sources */,
+				0AFD50301D21153C0043624C /* AppDelegate.m in Sources */,
+				0AFD504A1D21164E0043624C /* SettingManager.m in Sources */,
+				0AFD505B1D2117950043624C /* ShopManager.m in Sources */,
+				0AFD502D1D21153C0043624C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		0AFD50341D21153C0043624C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AFD50351D21153C0043624C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0AFD50391D21153D0043624C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0AFD503A1D21153D0043624C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0AFD503D1D21153D0043624C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0AFD503E1D21153D0043624C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0AFD50401D21153D0043624C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DesignPatternExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rikkeisoft.DesignPatternExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0AFD50411D21153D0043624C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DesignPatternExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.rikkeisoft.DesignPatternExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0AFD50231D21153B0043624C /* Build configuration list for PBXProject "DesignPatternExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AFD503D1D21153D0043624C /* Debug */,
+				0AFD503E1D21153D0043624C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0AFD503F1D21153D0043624C /* Build configuration list for PBXNativeTarget "DesignPatternExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0AFD50401D21153D0043624C /* Debug */,
+				0AFD50411D21153D0043624C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AFD50201D21153B0043624C /* Project object */;
+}
