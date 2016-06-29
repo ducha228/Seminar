@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MasterPrinter.h"
 
-@interface EpsonPrinter : NSObject
+@interface EpsonPrinter : NSObject <MasterPrinter>
 
 @end

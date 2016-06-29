@@ -7,7 +7,19 @@
 //
 
 #import "PrinterFactory.h"
+#import "EpsonPrinter.h"
+#import "StarPrinter.h"
+#import "ConsolePrinter.h"
 
 @implementation PrinterFactory
-
++ (id<MasterPrinter>)createPrinter:(PrinterType)printerType {
+    switch (printerType) {
+        case PrinterTypeEpson:
+            return [[EpsonPrinter alloc] init];
+        case PrinterTypeStar:
+            return [[StarPrinter alloc] init];
+        default:
+            return [[ConsolePrinter alloc] init];
+    }
+}
 @end

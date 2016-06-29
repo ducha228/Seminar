@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface ShopManager : NSObject
-
++ (instancetype)sharedInstance;
+- (void)createShopWithDictionary:(NSDictionary *)dictionary;
 @end

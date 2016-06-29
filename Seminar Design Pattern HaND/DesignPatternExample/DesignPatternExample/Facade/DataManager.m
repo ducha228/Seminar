@@ -9,5 +9,7 @@
 #import "DataManager.h"
 
 @implementation DataManager
-
+- (void)saveWithDictionary:(NSDictionary *)dictionary {
+    NSLog(@"DataManager save data persistently");
+}
 @end

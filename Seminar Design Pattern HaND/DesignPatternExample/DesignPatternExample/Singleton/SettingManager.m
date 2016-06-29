@@ -9,5 +9,12 @@
 #import "SettingManager.h"
 
 @implementation SettingManager
-
++ (instancetype)sharedInstance {
+    static SettingManager *instance = nil;
+    static dispatch_once_t once_token;
+    dispatch_once(&once_token, ^{
+        instance = [[SettingManager alloc] init];
+    });
+    return instance;
+}
 @end

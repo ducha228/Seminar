@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MasterPrinter.h"
 
-@interface ConsolePrinter : NSObject
+@interface ConsolePrinter : NSObject <MasterPrinter>
 
 @end

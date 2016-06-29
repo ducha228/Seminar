@@ -7,7 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+typedef enum {
+    PrinterTypeEpson,
+    PrinterTypeStar,
+    PrinterTypeConsole
+} PrinterType;
 
 @interface SettingManager : NSObject
-
+@property (nonatomic, assign) BOOL offlineEnable;
+@property (nonatomic, assign) PrinterType printerType;
++ (instancetype)sharedInstance;
 @end

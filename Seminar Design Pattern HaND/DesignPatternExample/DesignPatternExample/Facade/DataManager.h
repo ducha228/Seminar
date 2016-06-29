@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface DataManager : NSObject
-
+- (void)saveWithDictionary:(NSDictionary *)dictionary;
 @end

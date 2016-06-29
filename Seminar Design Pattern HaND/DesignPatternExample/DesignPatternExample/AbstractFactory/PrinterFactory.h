@@ -7,7 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MasterPrinter.h"
+#import "SettingManager.h"
 
 @interface PrinterFactory : NSObject
-
++ (id<MasterPrinter>)createPrinter:(PrinterType)printerType;
 @end

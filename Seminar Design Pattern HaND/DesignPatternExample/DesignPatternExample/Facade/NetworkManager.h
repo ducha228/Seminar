@@ -9,5 +9,5 @@
 #import <Foundation/Foundation.h>
 
 @interface NetworkManager : NSObject
-
+- (void)postWithParameter:(NSDictionary *)param;
 @end
