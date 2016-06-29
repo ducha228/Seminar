@@ -8,6 +8,11 @@
 
 #import "UndoManager.h"
 
+@interface UndoManager()
+@property (nonatomic, strong) NSMutableArray *undoStack;
+@property (nonatomic, strong) NSMutableArray *objects;
+@end
+
 @implementation UndoManager
 + (instancetype)sharedInstance {
     static UndoManager *instance = nil;
@@ -18,6 +23,13 @@
     return instance;
 }
 
+- (instancetype)init {
+    self = [super init];
+    self.objects = [NSMutableArray arrayWithArray:@[@"Object 1", @"Object 2", @"Object 3", @"Object 4", @"Object 5", @"Object 6"]];
+    self.undoStack = [NSMutableArray array];
+    return self;
+}
+
 - (void)deleteObjectAtIndex:(NSInteger)index {
     NSString *deletedObject = self.objects[index];
     
@@ -25,8 +37,9 @@
     NSInvocation *undoInvocation = [NSInvocation invocationWithMethodSignature:signature];
     [undoInvocation setSelector:@selector(addObject:atIndex:)];
     [undoInvocation setTarget:self];
-    [undoInvocation setArgument:&deletedObject atIndex:0];
-    [undoInvocation setArgument:&index atIndex:1];
+    //Index will start from 2
+    [undoInvocation setArgument:&deletedObject atIndex:2];
+    [undoInvocation setArgument:&index atIndex:3];
     [undoInvocation retainArguments];
     
     [self.undoStack addObject:undoInvocation];
@@ -45,8 +58,12 @@
 - (void)undoAction {
     if (self.undoStack.count > 0) {
         NSInvocation *undoInvocation = [self.undoStack lastObject];
-        [undoInvocation invoke];
         [self.undoStack removeLastObject];
+        [undoInvocation invoke];
     }
+}
+
+- (NSArray *)getObjects {
+    return self.objects;
 }
 @end

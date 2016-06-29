@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0A4A2C3D1D2423D700A0F42E /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4A2C3C1D2423D700A0F42E /* Employee.m */; };
+		0A4A2C421D242EE400A0F42E /* InvocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4A2C411D242EE400A0F42E /* InvocationViewController.m */; };
 		0AA708761D2369000034A500 /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA708751D2369000034A500 /* NSString+JSON.m */; };
 		0AA708801D23AF3D0034A500 /* UndoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA7087F1D23AF3D0034A500 /* UndoManager.m */; };
 		0AFD502D1D21153C0043624C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD502C1D21153C0043624C /* main.m */; };
@@ -26,6 +28,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0A4A2C3B1D2423D700A0F42E /* Employee.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Employee.h; path = Observer/KVO/Employee.h; sourceTree = "<group>"; };
+		0A4A2C3C1D2423D700A0F42E /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Employee.m; path = Observer/KVO/Employee.m; sourceTree = "<group>"; };
+		0A4A2C401D242EE400A0F42E /* InvocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvocationViewController.h; sourceTree = "<group>"; };
+		0A4A2C411D242EE400A0F42E /* InvocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvocationViewController.m; sourceTree = "<group>"; };
 		0AA708731D2359A70034A500 /* MasterPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterPrinter.h; path = AbstractFactory/MasterPrinter.h; sourceTree = "<group>"; };
 		0AA708741D2369000034A500 /* NSString+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+JSON.h"; path = "Decorator/Category/NSString+JSON.h"; sourceTree = "<group>"; };
 		0AA708751D2369000034A500 /* NSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+JSON.m"; path = "Decorator/Category/NSString+JSON.m"; sourceTree = "<group>"; };
@@ -70,6 +76,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A4A2C3E1D2423DE00A0F42E /* Observer */ = {
+			isa = PBXGroup;
+			children = (
+				0A4A2C3F1D2423E800A0F42E /* KVO */,
+			);
+			name = Observer;
+			sourceTree = "<group>";
+		};
+		0A4A2C3F1D2423E800A0F42E /* KVO */ = {
+			isa = PBXGroup;
+			children = (
+				0A4A2C3B1D2423D700A0F42E /* Employee.h */,
+				0A4A2C3C1D2423D700A0F42E /* Employee.m */,
+			);
+			name = KVO;
+			sourceTree = "<group>";
+		};
 		0AA708771D2369060034A500 /* Decorator */ = {
 			isa = PBXGroup;
 			children = (
@@ -127,6 +150,8 @@
 				0AFD502F1D21153C0043624C /* AppDelegate.m */,
 				0AFD50311D21153C0043624C /* ViewController.h */,
 				0AFD50321D21153C0043624C /* ViewController.m */,
+				0A4A2C401D242EE400A0F42E /* InvocationViewController.h */,
+				0A4A2C411D242EE400A0F42E /* InvocationViewController.m */,
 				0AFD50341D21153C0043624C /* Main.storyboard */,
 				0AFD50371D21153D0043624C /* Assets.xcassets */,
 				0AFD50391D21153D0043624C /* LaunchScreen.storyboard */,
@@ -137,6 +162,7 @@
 				0AFD50571D2117050043624C /* AbstractFactory */,
 				0AA708771D2369060034A500 /* Decorator */,
 				0AA708811D23AF410034A500 /* Command */,
+				0A4A2C3E1D2423DE00A0F42E /* Observer */,
 			);
 			path = DesignPatternExample;
 			sourceTree = "<group>";
@@ -260,6 +286,7 @@
 				0AFD50441D2116260043624C /* NetworkManager.m in Sources */,
 				0AFD50471D2116380043624C /* DataManager.m in Sources */,
 				0AFD50531D2116880043624C /* StarPrinter.m in Sources */,
+				0A4A2C421D242EE400A0F42E /* InvocationViewController.m in Sources */,
 				0AFD50501D2116790043624C /* EpsonPrinter.m in Sources */,
 				0AFD50561D2116990043624C /* ConsolePrinter.m in Sources */,
 				0AFD50331D21153C0043624C /* ViewController.m in Sources */,
@@ -270,6 +297,7 @@
 				0AFD504A1D21164E0043624C /* SettingManager.m in Sources */,
 				0AFD505B1D2117950043624C /* ShopManager.m in Sources */,
 				0AFD502D1D21153C0043624C /* main.m in Sources */,
+				0A4A2C3D1D2423D700A0F42E /* Employee.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

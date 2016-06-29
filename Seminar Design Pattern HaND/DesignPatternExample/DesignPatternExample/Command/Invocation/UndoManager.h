@@ -9,10 +9,9 @@
 #import <Foundation/Foundation.h>
 
 @interface UndoManager : NSObject
-@property (nonatomic, strong) NSMutableArray *undoStack;
-@property (nonatomic, strong) NSMutableArray *objects;
 + (instancetype)sharedInstance;
 - (void)deleteObjectAtIndex:(NSInteger)index;
 - (void)addObject:(NSString *)object atIndex:(NSInteger)index;
 - (void)undoAction;
+- (NSArray *)getObjects;
 @end
