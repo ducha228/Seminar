@@ -36,6 +36,8 @@ static void *employee2Context = &employee2Context;
     [SettingManager sharedInstance].printerType = self.printerTypeSegment.selectedSegmentIndex;
     [SettingManager sharedInstance].offlineEnable = !self.onlineSwitch.on;
     [self testKVO];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeSystem];
+    [button addTarget:self action:@selector(buttonDidTap:) forControlEvents:UIControlEventTouchUpInside];
 }
 
 - (void)didReceiveMemoryWarning {

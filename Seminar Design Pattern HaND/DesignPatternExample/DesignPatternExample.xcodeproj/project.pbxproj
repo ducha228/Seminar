@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0A4A2C3D1D2423D700A0F42E /* Employee.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4A2C3C1D2423D700A0F42E /* Employee.m */; };
 		0A4A2C421D242EE400A0F42E /* InvocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A4A2C411D242EE400A0F42E /* InvocationViewController.m */; };
+		0A81FE801D25743500454C78 /* SettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A81FE7F1D25743500454C78 /* SettingManager.swift */; };
 		0AA708761D2369000034A500 /* NSString+JSON.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA708751D2369000034A500 /* NSString+JSON.m */; };
 		0AA708801D23AF3D0034A500 /* UndoManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AA7087F1D23AF3D0034A500 /* UndoManager.m */; };
 		0AFD502D1D21153C0043624C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0AFD502C1D21153C0043624C /* main.m */; };
@@ -32,6 +33,8 @@
 		0A4A2C3C1D2423D700A0F42E /* Employee.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Employee.m; path = Observer/KVO/Employee.m; sourceTree = "<group>"; };
 		0A4A2C401D242EE400A0F42E /* InvocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InvocationViewController.h; sourceTree = "<group>"; };
 		0A4A2C411D242EE400A0F42E /* InvocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InvocationViewController.m; sourceTree = "<group>"; };
+		0A81FE7E1D25743500454C78 /* DesignPatternExample-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DesignPatternExample-Bridging-Header.h"; sourceTree = "<group>"; };
+		0A81FE7F1D25743500454C78 /* SettingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingManager.swift; path = Singleton/SettingManager.swift; sourceTree = "<group>"; };
 		0AA708731D2359A70034A500 /* MasterPrinter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MasterPrinter.h; path = AbstractFactory/MasterPrinter.h; sourceTree = "<group>"; };
 		0AA708741D2369000034A500 /* NSString+JSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+JSON.h"; path = "Decorator/Category/NSString+JSON.h"; sourceTree = "<group>"; };
 		0AA708751D2369000034A500 /* NSString+JSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+JSON.m"; path = "Decorator/Category/NSString+JSON.m"; sourceTree = "<group>"; };
@@ -196,6 +199,8 @@
 			children = (
 				0AFD50481D21164E0043624C /* SettingManager.h */,
 				0AFD50491D21164E0043624C /* SettingManager.m */,
+				0A81FE7F1D25743500454C78 /* SettingManager.swift */,
+				0A81FE7E1D25743500454C78 /* DesignPatternExample-Bridging-Header.h */,
 			);
 			name = Singleton;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 				0AFD50561D2116990043624C /* ConsolePrinter.m in Sources */,
 				0AFD50331D21153C0043624C /* ViewController.m in Sources */,
 				0AFD504D1D2116690043624C /* PrinterFactory.m in Sources */,
+				0A81FE801D25743500454C78 /* SettingManager.swift in Sources */,
 				0AA708801D23AF3D0034A500 /* UndoManager.m in Sources */,
 				0AA708761D2369000034A500 /* NSString+JSON.m in Sources */,
 				0AFD50301D21153C0043624C /* AppDelegate.m in Sources */,
@@ -409,11 +415,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DesignPatternExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rikkeisoft.DesignPatternExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DesignPatternExample/DesignPatternExample-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -421,11 +430,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = DesignPatternExample/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rikkeisoft.DesignPatternExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "DesignPatternExample/DesignPatternExample-Bridging-Header.h";
 			};
 			name = Release;
 		};
