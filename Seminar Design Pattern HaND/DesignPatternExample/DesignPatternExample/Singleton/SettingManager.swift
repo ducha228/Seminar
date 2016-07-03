@@ -11,3 +11,7 @@ import UIKit
 class SettingManager: NSObject {
     static let sharedInstance = SettingManager()
 }
+
+extension SettingManager {
+    
+}
